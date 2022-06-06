@@ -29,5 +29,5 @@ function multiply(a, b){
 
 ## **Work experience**
 **CV#1. Markdown & Git (June 2022)**
-
+https://brazhik.github.io/rsschool-cv/cv
   

@@ -1,1 +1,1 @@
-# rsschool-cv
+https://brazhik.github.io/rsschool-cv/cv
