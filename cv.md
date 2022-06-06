@@ -1,4 +1,5 @@
 # Dmitrii Brazhnikov
+[Photo](/avatar.jpg)
 
 ## Contact
 - **discord**: Dmitrii (@brazhik)
@@ -28,7 +29,7 @@ function multiply(a, b){
 ```
 
 ## Work experience
-**[CV#1. Markdown & Git](https://brazhik.github.io/rsschool-cv/cv) (June 2022)**
+[CV#1. Markdown & Git](https://brazhik.github.io/rsschool-cv/cv) (June 2022)
 
 ## Education
 Lomonosov Moscow State University, Physics (2008)
