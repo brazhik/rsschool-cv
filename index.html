@@ -1,8 +1,107 @@
-<html lang="ru">
-    <head>
-        <title>CV</title>
-    </head>
-    <body>
-        <p>CV body</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <header>
+    <div class="left-column"></div>
+    <div class="center-column">
+      <img src="/images/avatar.jpg" alt="Avatar" width="300" height="300">
+      <h1>Dmitrii<br>Brazhnikov</h1>
+      <h2>ABAP Developer</h2>
+    </div>
+    <div class="right-column">
+      <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code-example">Code example</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><b>discord:</b> Dmitrii (@brazhik)</li>
+        <li><b>E-mail:</b> mail@example.com</li>
+        <li><b>Phone:</b> +7-XXX-XXX-XX-XX</li>
+      </ul>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <h2>About me</h2>
+      <ul>
+        <li><b>Goles:</b> study frontend development (JS, React);</li>
+        <li><b>Current specialization:</b> ABAP-developer for SAP products;</li>
+        <li><b>Strengths:</b> attentiveness, the ability to complete tasks, the ability to search for information.</li>
+      </ul>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      - ABAP language (ALV-Grid, ALV-Tree, transactions, reports, UI, code optimization, etc.):
+      - experience of using User-Exit, BAdi, Enhancements, BAPI, RFC, creating oData и REST web-services;
+      - reports in MS Office format (ZWWW, XLSX Workbench);
+      - pdf-forms (Adobe LiveCycle Designer);
+      - integration with external systems by SAP PI/XI, SAP .NET Connector, using Single Sign-On (SSO);
+      - experience of developing for modules RE-FX, HR, RCM;
+      - basic knowledge of SQL and PL/SQL (Oracle);
+      - other programming languages: C++, Java, VBA.
+    </section>
+
+    <section class="code-example" id="code-example">
+      <h2>Code example</h2>
+      <pre>
+        <code>
+  METHOD check_file_name.
+
+    cl_gui_frontend_services=&gt;file_exist( EXPORTING  file                 = iv_file_name
+                                          RECEIVING  result               = DATA(lf_result)
+                                          EXCEPTIONS cntl_error           = 1
+                                                     error_no_gui         = 2
+                                                     wrong_parameter      = 3
+                                                     not_supported_by_gui = 4
+                                                     OTHERS               = 5 ).
+
+    IF ( sy-subrc &lt;&gt; 0 ) OR ( lf_result &lt;&gt; abap_true ).
+      MESSAGE e003 WITH iv_file_name INTO DATA(lv_msg) ##NEEDED.
+      zcx_dh4858_reca=&gt;raise_from_symsg( ).
+    ENDIF.
+
+  ENDMETHOD.
+        </code>
+      </pre>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2>Work experience</h2>
+      [CV#1. Markdown & Git](https://brazhik.github.io/rsschool-cv/cv) (June 2022)
+    </section>
+
+    <section class="education" id="education">
+      <h2>Education</h2>
+      Lomonosov Moscow State University, Physics (2008)
+    </section>
+
+    <section class="languages" id="languages">
+      <h2>Languages</h2>
+      English (Intermediate, B1)
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>

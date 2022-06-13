@@ -1,4 +1,57 @@
-p {
-    color: black;
-    text-align: left;
+body {
+  margin: 15px auto;
+  padding: 15px;
+  width: 1024px;
+  font-family: Verdana, sans-serif;
+  box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  letter-spacing: 7px;
+  margin-bottom: 0px;
+}
+
+.left-column {
+  width: 30%;
+}
+
+.center-column {
+  width: 40%;
+  text-align: center;
+}
+
+.right-column {
+  width: 30%;
+  line-height: 2;
+}
+
+.right-column ul {
+  list-style-type: none;
+}
+
+.right-column a {
+  text-decoration: none;
+  color: #686464;
+  font-weight: bold;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.about-me {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
