@@ -1,3 +1,8 @@
+:root {
+  --link-color: #686464;
+  --link-hover-color: crimson;
+}
+
 body {
   margin: 15px auto;
   padding: 15px;
@@ -35,8 +40,12 @@ header h1 {
 
 .right-column a {
   text-decoration: none;
-  color: #686464;
+  color: var(--link-color);
   font-weight: bold;
+}
+
+.right-column a:hover {
+  color: var(--link-hover-color);
 }
 
 main h2 {
@@ -65,8 +74,22 @@ main section {
   width: 700px;
 }
 
+.code-example pre {
+  background: #dfdfdf;
+}
+
 .projects {
   width: 400px;
+}
+
+.projects a,
+.projects a:visited,
+.projects a:active {
+  color: var(--link-color);
+}
+
+.projects a:hover {
+  color: var(--link-hover-color);
 }
 
 .education {
