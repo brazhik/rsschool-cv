@@ -1,0 +1,130 @@
+:root {
+  --link-color: #686464;
+  --link-hover-color: crimson;
+}
+
+body {
+  margin: 25px auto;
+  padding: 25px;
+  width: 750px;
+  font-family: Verdana, sans-serif;
+  box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  margin-bottom: 0px;
+  letter-spacing: 7px;
+}
+
+.left-column {
+  width: 30%;
+}
+
+.center-column {
+  width: 40%;
+  text-align: center;
+}
+
+.right-column {
+  width: 30%;
+  line-height: 2;
+}
+
+.right-column ul {
+  list-style-type: none;
+}
+
+.right-column a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.right-column a:hover {
+  color: var(--link-hover-color);
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+main section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  width: 300px;
+}
+
+.about-me {
+  width: 400px;
+}
+
+.skills {
+  width: 550px;
+}
+
+.code-example {
+  width: 700px;
+}
+
+.code-example pre {
+  background: #dfdfdf;
+}
+
+.projects {
+  width: 400px;
+}
+
+.projects a,
+.projects a:visited,
+.projects a:active {
+  color: var(--link-color);
+}
+
+.projects a:hover {
+  color: var(--link-hover-color);
+}
+
+.education {
+  width: 500px;
+}
+
+.languages {
+  width: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  background: #dfdfdf;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.github {
+  align-items: center;
+  display: flex;
+  width: 20%;
+}
+
+.github-logo {
+  margin-right: 10px;
+}
+
+.rsschool {
+  text-align: right;
+  width: 20%;
+}
