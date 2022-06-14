@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <header>
+    <div class="left-column"></div>
+    <div class="center-column">
+      <img src="./images/avatar.jpg" width="300" height="300" alt="Avatar">
+      <h1>Dmitrii<br>Brazhnikov</h1>
+      <h2>Frontend Developer</h2>
+    </div>
+    <div class="right-column">
+      <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code-example">Code example</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><b>discord:</b> Dmitrii (@brazhik)</li>
+        <li><b>e-mail:</b> mail@example.com</li>
+        <li><b>phone:</b> +7-XXX-XXX-XX-XX</li>
+      </ul>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <h2>About me</h2>
+      <ul>
+        <li><b>Goles:</b> in-depth study of frontend development (JS, React);</li>
+        <li><b>Current specialization:</b> ABAP-developer for SAP products;</li>
+        <li><b>Strengths:</b> self-motivated, honesty, versatility, organization, results driven, teamwork.</li>
+      </ul>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ABAP language (ALV-Grid, ALV-Tree, transactions, reports, UI, code optimization, etc.):
+          <ul>
+            <li>experience of using User-Exit, BAdi, Enhancements, BAPI, RFC, creating oData и REST web-services;</li>
+            <li>reports in MS Office format (ZWWW, XLSX Workbench);</li>
+            <li>pdf-forms (Adobe LiveCycle Designer);</li>
+            <li>integration with external systems by SAP PI/XI, SAP .NET Connector, using Single Sign-On (SSO);</li>
+            <li>experience in development for modules RE-FX, HR, RCM.</li>
+          </ul>
+        </li>
+        <li>basic knowledge of other languages:
+          <ul>
+            <li>SQL and PL/SQL (Oracle);</li>
+            <li>Java;</li>
+            <li>VBA.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="code-example" id="code-example">
+      <h2>Code example</h2>
+      <pre>
+        <code>
+  METHOD check_file_name.
+
+    cl_gui_frontend_services=&gt;file_exist( EXPORTING  file                 = iv_file_name
+                                          RECEIVING  result               = DATA(lf_result)
+                                          EXCEPTIONS cntl_error           = 1
+                                                     error_no_gui         = 2
+                                                     wrong_parameter      = 3
+                                                     not_supported_by_gui = 4
+                                                     OTHERS               = 5 ).
+
+    IF ( sy-subrc &lt;&gt; 0 ) OR ( lf_result &lt;&gt; abap_true ).
+      MESSAGE e003 WITH iv_file_name INTO DATA(lv_msg) ##NEEDED.
+      zcx_dh4858_reca=&gt;raise_from_symsg( ).
+    ENDIF.
+
+  ENDMETHOD.
+        </code>
+      </pre>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://brazhik.github.io/rsschool-cv/cv" target="_blank">CV#1. Markdown & Git</a> (June 2022)</li>
+        <li><a href="https://brazhik.github.io/rsschool-cv" target="_blank">CV#3. CV. Cross-Check</a> (June 2022)</li>
+      </ul>
+    </section>
+
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Lomonosov Moscow State University, Physics (2008)</li>
+        <li>RS School, JS / Front-end (2022)</li>
+      </ul>
+    </section>
+
+    <section class="languages" id="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>English (Intermediate, B1)</li>
+        <li>Russian (Native)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a class="github" href="https://github.com/brazhik" target="_blank">
+      <img class="github-logo" src="./icons/github_logo.png" width="32" height="32" alt="GitHub Logo">
+      <p>My GitHub</p>
+    </a>
+    <p>2022</p>
+    <a class="rsschool" href="https://rs.school/js/" target="_blank">
+      <img src="icons/rs_school_js.svg" width="86" height="32" alt="RS School">
+    </a>
+  </footer>
+</body>
+
+</html>
