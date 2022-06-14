@@ -1,5 +1,5 @@
 # Dmitrii Brazhnikov
-![Photo](/rsschool-cv/assets/images/avatar.jpg)
+![Photo](/rsschool-cv/images/avatar.jpg)
 
 ## Contact
 - **discord**: Dmitrii (@brazhik)
