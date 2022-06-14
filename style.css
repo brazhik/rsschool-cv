@@ -4,9 +4,9 @@
 }
 
 body {
-  margin: 15px auto;
-  padding: 15px;
-  width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  width: 750px;
   font-family: Verdana, sans-serif;
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.3);
 }
@@ -16,8 +16,8 @@ header {
 }
 
 header h1 {
-  letter-spacing: 7px;
   margin-bottom: 0px;
+  letter-spacing: 7px;
 }
 
 .left-column {
@@ -39,9 +39,9 @@ header h1 {
 }
 
 .right-column a {
+  font-weight: bold;
   text-decoration: none;
   color: var(--link-color);
-  font-weight: bold;
 }
 
 .right-column a:hover {
@@ -50,7 +50,7 @@ header h1 {
 
 main h2 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 main section {
@@ -98,4 +98,33 @@ main section {
 
 .languages {
   width: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  background: #dfdfdf;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.github {
+  align-items: center;
+  display: flex;
+  width: 20%;
+}
+
+.github-logo {
+  margin-right: 10px;
+}
+
+.rsschool {
+  text-align: right;
+  width: 20%;
 }
